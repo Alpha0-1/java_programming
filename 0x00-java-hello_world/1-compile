@@ -1,0 +1,12 @@
+#!/bin/bash
+# 1-compile
+# Purpose: Compiles all Java files in the current directory
+
+# Loop through all .java files and compile them
+for file in *.java; do
+    if [ -f "$file" ]; then
+        echo "Compiling $file..."
+        javac "$file"
+    fi
+done
+echo "Compilation complete."

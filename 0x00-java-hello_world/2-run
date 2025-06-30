@@ -1,0 +1,12 @@
+#!/bin/bash
+# 2-run
+# Purpose: Runs a specified Java class file
+
+if [ $# -ne 1 ]; then
+    echo "Usage: ./2-run ClassName"
+    exit 1
+fi
+
+# Run the specified Java class
+echo "Running $1..."
+java "$1"
